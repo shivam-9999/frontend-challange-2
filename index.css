@@ -32,7 +32,6 @@ body {
 }
 
 body section {
-  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +64,7 @@ body section {
 body section .img {
   background: url("./stats-preview-card-component-main/images/image-header-mobile.jpg") no-repeat;
   background-size: cover;
-  min-height: 250px;
+  min-height: 220px;
   max-width: 328px;
   position: relative;
   border-radius: 10px 10px 0 0;
@@ -73,6 +72,9 @@ body section .img {
 
 @media (min-width: 768px) {
   body section .img {
+    background: url("./stats-preview-card-component-main/images/image-header-desktop.jpg") no-repeat;
+    min-width: 50%;
+    background-size: cover;
     width: 328px;
   }
 }
@@ -89,11 +91,11 @@ body section .img .layer {
 }
 
 body section .heading {
-  margin-top: 2rem;
-  font-size: 28px;
+  margin-top: 1rem;
+  font-size: 24px;
   font-weight: 700;
   color: white;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
 }
 
 body section .heading span {
@@ -128,7 +130,8 @@ body section article {
 body section article p {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
-  padding: 1.5rem 2.3rem;
+  font-size: 14px;
+  padding: 1.2rem 2rem;
   line-height: 1.5rem;
 }
 
@@ -142,7 +145,7 @@ body section article .numbers {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 36px;
+  gap: 1.2rem;
 }
 
 @media (min-width: 768px) {
@@ -157,18 +160,19 @@ body section article .numbers {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 36px;
   }
 }
 
 body section article .numbers div div {
   color: white;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 700;
 }
 
 body section article .numbers div p {
   all: unset;
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
 }

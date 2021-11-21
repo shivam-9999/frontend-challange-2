@@ -1,0 +1,175 @@
+@import url("https://fonts.google.com/specimen/Inter");
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter, Lexend, Deca", sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #090b1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+  }
+}
+
+body section {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 373px;
+  padding: 25px;
+  background-color: #1b1938;
+}
+
+@media (min-width: 768px) {
+  body section {
+    max-width: 1000px;
+    margin: 0 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+body section .img {
+  background: url("./stats-preview-card-component-main/images/image-header-mobile.jpg") no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  max-width: 328px;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 768px) {
+  body section .img {
+    width: 328px;
+  }
+}
+
+body section .img .layer {
+  background-color: #aa5cdb;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+body section .heading {
+  margin-top: 2rem;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  padding: 0 2rem;
+}
+
+body section .heading span {
+  color: #aa5cdb;
+}
+
+body section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  body section article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+body section article p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  padding: 1.5rem 2.3rem;
+  line-height: 1.5rem;
+}
+
+body section article .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 36px;
+}
+
+@media (min-width: 768px) {
+  body section article .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body section article .numbers div div {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+body section article .numbers div p {
+  all: unset;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=index.css.map */
